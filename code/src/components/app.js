@@ -1,15 +1,18 @@
 import React from "react"
+// import ListItem from "./listItem/index.js"
+import Form from "./form/index.js"
+import List from "./list/index.js"
 
-class App extends React.Component {
+export default class App extends React.Component {
 
   render() {
     return (
       <div>
-        Find me in src/app.js!
+        <Form />
+        <List />
+        {/* <ListItem /> */}
       </div>
     )
   }
 
 }
-
-export default App
