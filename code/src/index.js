@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./components/app"
+import ToDoMainList from "./components/toDoMainList"
 import "./index.css"
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<ToDoMainList />, document.getElementById("root"))
