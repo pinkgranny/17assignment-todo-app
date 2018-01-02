@@ -23,19 +23,17 @@ export default class Form extends React.Component {
   // old tasks and their status to the end user from local storge
   // const userTasksThatAreSaved = JSON.parse(localStorage.getItem("singleUserTasksToBeSaved"))
 
-  // A callback function is needed to fetch the loclly stored data of the end user
+  // A callback function is needed to fetch the locally stored data of the end user
   // persistState = () => {}
 
   // This listens to clicking of submit button to know
   // when to show the task in To Do list
   onSubmit = event => {
     event.preventDefault()
-    console.log("To DO added", this.state.text)
+    console.log("To Do added", this.state.text)
     this.props.onNewItem(this.state.text)
     this.setState({ text: "" })
     // localStorage.setItem({""})
-
-
   }
 
   // This Renders the static question and text input field

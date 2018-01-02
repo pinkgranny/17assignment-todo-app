@@ -5,7 +5,7 @@ import Form from "./form"
 
 export default class ToDoMainList extends React.Component {
 
-// This defines the two things we need to know about each ToD-list item in an array:
+// This defines the two things we need to know about each ToDo-list item in an array:
   constructor(props) {
     super(props)
     this.state = {
@@ -16,7 +16,7 @@ export default class ToDoMainList extends React.Component {
     }
   }
 
-  // If something was saved earlierto the Local storage in this browser then set the state
+  // If something was saved earlier to the Local storage in this browser then set the state
   // with an object that is based on the string in the local storage
   componentWillMount() {
     if (localStorage.getItem("singleUserTasksToBeSaved")) {
